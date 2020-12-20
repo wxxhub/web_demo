@@ -26,8 +26,12 @@ function findData() {
     dataList.innerHTML = html;
 }
 
+function reHref(name) {
+    // alert(name);
+}
+
 function __createRow(data) {
-    var row = '<li>' + data + '</li>';
+    var row = '<li onclick=\'reHref(\"' + data + '\")\'>' + data + '</li>';
     return row;
 }
 
