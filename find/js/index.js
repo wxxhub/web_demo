@@ -27,11 +27,11 @@ function findData() {
 }
 
 function reHref(name) {
-    // alert(name);
+    alert(name);
 }
 
 function __createRow(data) {
-    var row = '<li onclick=\'reHref(\"' + data + '\")\'>' + data + '</li>';
+    var row = '<li onMouseOver=\'this.className=\"dataLiOn\"\' onMouseOut=\'this.className=\"dataLi\"\' onclick=\'reHref(\"' + data + '\")\'>' + data + '</li>';
     return row;
 }
 
